@@ -1,5 +1,9 @@
-// JavaScript review 
-fun = () => {
-    console.log('fun');
+
+const fun = () => {
+    setTimeout(() => {
+        return { message: 'Hi' }
+    }, 2000);
 }
-fun();
+const hi = fun();
+console.log(hi.message);
+
